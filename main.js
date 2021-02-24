@@ -44,7 +44,7 @@ switch (true) {
 
 let sum = 0;
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 1000; i++) {
     sum = (i % 3 == 0 || i % 5 == 0) ? sum += i : sum; // if (i%3 == 0 || i%5 == 0) { sum += i }
 }
 
