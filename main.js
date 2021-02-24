@@ -1,7 +1,7 @@
 //Task1 
 //Write a JavaScript program which compute, the average marks of the following students Then, this average is used to determine the corresponding grade.
 
-let students = [
+const STUDENTS = [
     { name: 'John', mark: 80 },
     { name: 'Bill', mark: 77 },
     { name: 'David', mark: 68 },
@@ -10,13 +10,13 @@ let students = [
 ];
 
 /*  let total = 0;
-for (let i = 0; i < students.length; i++) {
-    total += students[i].mark;
+for (let i = 0; i < STUDENTS.length; i++) {
+    total += STUDENTS[i].mark;
 } 
 
- const AVERAGE_GRADE = total / students.length; */ //можна і так зробити
+ const AVERAGE_GRADE = total / STUDENTS.length; */ //можна і так зробити
 
-const AVERAGE_GRADE = students.reduce((sum, current) => sum + current.mark, 0) / students.length;
+const AVERAGE_GRADE = STUDENTS.reduce((sum, current) => sum + current.mark, 0) / STUDENTS.length;
 switch (true) {
 
     case AVERAGE_GRADE < 60:
@@ -54,7 +54,6 @@ console.log(sum)
 
 //Task 3
 //Write a JavaScript program to construct the following pattern, using a nested for loop. 
-
 let chr = '';
 for (let i = 1; i <= 5; i++) {
 
